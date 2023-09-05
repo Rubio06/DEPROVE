@@ -1,0 +1,95 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.conte-titulo{
+height: 100px;
+}
+h1{
+  font-size: 80px;
+  text-align: center;
+}
+.contenedor{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.enca{
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0;  
+}
+
+.container{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+.bajar{
+    width: 200px;
+    font-size:18px;
+    font-weight: 900;
+    background-color: rgb(225, 237, 46);
+    border-radius: 10px;
+   cursor: pointer;
+   border: 3px solid black;
+   margin-left: 20px;
+    }
+/* Edicion de input type file */
+.conte-file {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .conte-file::before {
+  background-color: rgb(0, 240, 24);
+    color: rgb(10, 9, 9);
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    content: ''; 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;  
+  }
+  .conte-file input[type="file"] {
+    opacity: 0;
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  #conte-file::before {
+    content: 'SUBIR DOCUMENTO';
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+.conte-table{
+    overflow: scroll;
+    height: 450px;
+    width: 1250px;
+}
+#excel_data::-webkit-scrollbar{
+  background:rgb(238, 238, 238);
+  height:5px;
+  width:5px;
+  }
+  #excel_data::-webkit-scrollbar-thumb{
+      background:green;
+      
+      }
+
+ th,
+ td {
+    border: 1px dashed rgba(32, 213, 216, 0.809);
+    background-color: #FFF;
+    width: 140px;
+    font-size: 20px;
+  }
+ 

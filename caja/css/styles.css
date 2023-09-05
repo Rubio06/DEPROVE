@@ -1,0 +1,720 @@
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+
+
+
+
+/* formulario1 */
+
+/* form1 */
+/* 
+body{
+
+    border-radius: 15px;
+    width: 65%;
+    min-width: 1000px;
+    max-width: 1000px;
+    background-color: rgba(240, 240, 240, 0.89);
+} */
+
+.depost{
+    position: absolute;
+    top: -23px;
+    font-size: 25px;
+    font-weight: bold;
+    background: rgb(37, 24, 49);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.empresa-terceros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1frs;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.menu{
+
+    width: 35%;
+    padding: 20px;
+}
+
+.container1{
+    margin-left: 40px;
+    height: 500px;
+
+}
+
+
+.serie{
+    margin-right: 60px;
+}
+
+.serie-numero{
+    margin-left: 140px;
+}
+
+
+.select-principal{
+    width: 185%;
+}
+
+.titulo{
+    background:rgb(255, 231, 123);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    min-width: 425px;
+    max-width: 425px;
+
+}
+
+
+/* --formularioa */
+.form1{
+
+    width: 45%;
+    padding: 20px;
+    height: 20%;
+    border-radius: 15px;
+    border: 2px solid black;
+    min-width: 550px;
+    max-width: 550px;
+    outline: none;
+
+    min-height: 700px;
+    background: white;
+}
+
+
+
+
+
+/* .compago{
+    border: 2px solid black;
+} */
+
+.comprobante{
+    position: static;
+    background: rgb(37, 24, 49);
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 25px;
+}
+
+
+/* .operacion2{
+
+    border: 2px solid black;
+ 
+} */
+
+.operacion7{
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 10px;
+}
+
+.botonbanco{
+    width: 30%;
+    height: 30px;
+    margin-left: 35px;
+}
+
+.bancoboton{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.areageneral{
+    min-width: 950px;
+    max-width: 950px;
+    width: 100%;
+}
+
+
+/* observación */
+.area{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 20px;
+
+}
+
+.docum{
+    margin: auto;
+    display: grid;
+    width: 150%;
+    grid-template-columns: 1fr 120fr 1fr 1fr;
+}
+
+
+.registrar{
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    padding: 10px;
+    background-color: red;
+    color: rgb(255, 231, 123);
+    border-radius: 10px;
+}
+
+.registrar:hover{
+    transform: scale(1.1);
+
+}
+
+
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 32%;
+}
+
+.concepto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 10%;
+}
+
+.monto{
+
+    border: 2px solid black;
+    background: white;
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 100%;
+    min-width: 550px;
+    max-width: 550px;
+
+}
+
+
+
+.fechaventa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+    width: 100%;
+}
+
+
+
+
+
+.monto2, .monto3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.deposito{
+
+    background-color: rgb(206, 219, 219);
+    color:black;
+    font-size: 18px;
+    font-weight: bold;
+    border-color: rgb(18 255 255);;
+    
+}
+
+.fech-factura{
+    width: 130%;
+    background-color: rgb(206, 219, 219);
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.emp{
+    margin-right: 90px;
+}
+.lblmonto{
+    margin-right: 100px;
+}
+
+/* .observacion{
+    position: relative;
+    right: 420px;
+    top: 420px;
+
+
+} */
+
+.montoform{
+border-color: rgb(18 255 255);;
+
+}
+
+.horainput{
+    background: rgba(157, 219, 230, 0.815);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 25px;
+    width: 170px;
+
+}
+
+.lblhora{
+    padding: 15px 5px;
+    width: 150px;
+}
+
+.reloj{
+    width: 85%;
+
+
+}
+
+.relojero{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+}
+
+
+.divobserva{
+    min-width: 370px;
+    max-width: 370px;
+}
+
+/* .observaciones{
+    border: 2px solid black;
+    width: 58%;
+    min-width: 100px;
+} */
+
+
+.refe{
+    margin-right: 57px; 
+
+}
+.des{
+    margin-right: 45px; 
+}
+
+.fecha {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+
+
+
+
+/* /fecha de gasto o de deposito/ */
+
+/* formulario2 */
+
+
+
+.flex1{
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    min-width: 500px;
+    width: 100%;
+    max-width: 500px;
+
+
+}
+
+.hora{
+    min-width: 100px;
+    border: 4px solid black;
+    /* width: 70%; */
+    width:200PX;
+    font-size: 25px;
+    font-weight: bold;
+    background: rgb(102, 76, 129);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+@media (max-width: 1015px) {
+    .hora{
+      margin-left: 20px;
+    }
+  }
+
+
+.fecha{
+
+    min-width: 90px;
+    padding: 18px 0 0 0;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 100%;
+    
+}
+label{
+    padding: 5px 5px;
+}
+
+input, select{
+    padding: 5px 5px;
+    outline: none;
+    border: 2px solid rgb(18 255 255);
+    border-radius: 7px;
+    padding: 10px 10px;
+    font-size: 17px;
+
+}
+
+
+
+input:focus, select:focus{
+    box-shadow: inset 0 0px 10px 2px rgb(18 255 255);
+    
+}
+
+
+/* grid */
+
+.separacion1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.separacion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    border: 2px solid black;
+}
+
+
+.separacion3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    
+}
+
+.doc{
+    width: 60%;
+}
+
+
+
+/* DESAPARECE DNITRABAJADOR */
+.dnitrabajador{
+    display: none;
+}
+
+
+/* SEGUNDA TABLA */
+
+
+.form2{
+    padding: 20px;
+    border-radius: 15px;
+    position:absolute;
+    top: 100px;
+    left: 650px;
+    min-width: 520px;
+    max-width: 520px;
+    outline: none;
+    width: 40%;
+    outline: none;
+    border: 2px solid black;
+    width: 15%;
+    background: white;
+}
+
+
+.fecha-cta{
+
+    text-align: center;
+    width: 100%;
+    border: 4px solid black;
+    border-radius: 10px;
+    margin: 20px 0 20px 0;
+    background: rgb(205, 238, 228);
+
+    padding: 10px 40px 10px 10px;
+}
+
+.fecha-confirm{
+    width: 100%;
+    margin-left:15px;
+
+}
+
+.fecha-2{
+    display: flex;
+
+}
+
+/* grid2 */
+
+.operacion3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 210%;
+    /* border: 2px solid black; */
+    min-width: 500px;
+    min-height: 50px;
+
+}
+
+
+.operacion1, .operacion2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.conc{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.form-general{
+    display: block;
+    width: 150%;
+
+    min-width: 500px;
+    max-width: 500px;
+
+}
+
+
+/* form3 */
+.form3{
+    border: 4px solid black;
+
+    width: 25%;
+    border-radius: 15px;
+
+
+}
+
+.tipo1, .tipo2, .tipo3{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 60%;
+    padding: 5px;
+}
+
+.form-componentes{
+    padding: 20px;
+}
+
+.trabajadores{
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* .formulariotrabajo{
+    width: 100%;
+    border: 2px solid black;
+} */
+
+.ajuste-boton{
+    width: 50%;
+    margin-left: 13px;
+    outline: none;
+    background-color: rgb(26, 197, 209);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.ajuste-boton:hover{
+    transform: scale(1.1);
+}
+
+
+
+.trabaja{
+
+    border: 2px solid black;
+    padding: 25px;
+    width: 45%;
+    /* position: relative;
+    top: 100px; */
+    bottom: -300px;
+    border-radius: 15px;
+    min-width: 550px;
+    max-width: 550px;
+    height: 730px;
+   background:white;
+}
+
+
+
+.labeltrajador{
+    background: rgb(3, 0, 5);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
+    position: absolute;
+    top: -22px;
+
+}
+
+.sep{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+}
+
+.sep2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.sep3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.sep1{
+
+    width: 100%;
+    display: inline-block;
+
+}
+
+
+
+.opciones{
+    width: 20%;
+}
+
+.opmonto{
+    width: 60%;
+
+}
+
+
+
+textarea{
+    resize: none;
+}
+
+.obs{
+
+    padding: 5px;
+
+
+}
+
+.con{
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+/* min- width */
+
+.monto{
+    min-width: 350px;
+
+}
+
+
+.concepto{
+    min-width: 500px;
+}
+
+
+
+.form3{
+    min-width: 500px;
+
+}
+
+.form-anidado{
+
+    min-width: 40
+    0px;
+    width: 100%;
+
+}
+
+.recarga{
+
+    border: 2px solid black;
+    width: 40%;
+    position: absolute;
+    top: 540px;
+    
+    padding: 20px;
+    
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 500px;
+    /* background: rgb(231, 231, 219); */
+
+}
+
+.empresainicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    min-width: 300px;
+    max-width: 300px;
+
+}
+
+
+
+/* .recarga:hover{
+    box-shadow: inset 0 0px 20px 2px rgb(105, 158, 83);
+} */
+
+.datosrecarga{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+
+
+
+/* RESPONSIVE DESING */
+
+@media screen and (max-width: 600px){
+    .form1{
+        display: none;
+    }
+}
+
+/* ventana modal */
+
+
+
+

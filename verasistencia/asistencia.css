@@ -1,0 +1,146 @@
+*{
+    background-color: white;
+font-family: Arial, Helvetica, sans-serif;
+transition: 0.3s;
+
+}
+.conte-asis{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.asistencia{
+    width: 900px;
+    height: 540px;
+    border-radius: 15px;
+    position: fixed;
+    bottom:30px;
+    border: 2px solid rgb(17, 17, 17);
+    box-shadow: 0 1px 0 1px rgb(0 0 0 / 3%);
+    background-color: white;
+}
+.titulo{
+    font-weight: 700;
+    background-color: white;
+    padding: 3px;
+    position: absolute;
+    top: -12px;
+    font-size: 20px;
+}
+.sub-titu{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+input{
+    border: 1px solid rgb(18 255 255);
+    box-shadow: 0 1px 0 1px rgb(0 0 0 / 3%);
+    outline: none;
+    border-radius: 5px;
+}
+input:focus, select:focus{
+    box-shadow: inset 0 0px 6px 2px rgb(18 255 255);
+}
+.conte-fecha,.conte-dni{
+    margin-left: 15px;
+    margin-top: 15px;
+
+
+}
+.conte-nombres{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+   
+}
+.conte-nombre,.conte-apellido{
+display: flex;
+flex-direction:column;
+align-items: center;
+margin-top: 15px;
+}
+.conte-hora{
+
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+    /* background-color: black; */
+}
+.conte-hora-res{
+
+ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width:50%;
+    /* background-color: rgb(204, 38, 38); */
+}
+
+#registrar{
+  
+    padding: 2px 35px;
+    background: red;
+    border: yellow solid 2px;
+    color: #ffff00;
+    font-size: 28px;
+    border-radius: 15px;
+    box-shadow: none;
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    
+}
+
+.conte-botton{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:130px;
+    align-items: center;
+
+}
+
+.conte-bottom-res{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 78%;
+}
+
+.salir{
+
+    border: 4px solid yellow;
+    background-color: red;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.salir:hover{
+    transform: scale(1.1);
+
+}
+
+
+@media (max-width: 630px) {
+    .conte-bottom-res{
+        width: 100%;
+    }
+
+    #registrar{
+  
+        width: 300px;
+        height: 60px;
+    }
+    
+  }

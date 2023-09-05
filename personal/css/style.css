@@ -1,0 +1,182 @@
+html {
+  /* overflow-x: hidden; */
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+* {
+  font-family: sans-serif;
+}
+*::after,
+*::before,
+* {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+input[type="submit"],
+button,
+a {
+  cursor: pointer;
+}
+img,
+h1,
+h2,
+h3,
+p {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+/* utilidades generales */
+main {
+  padding: 30px 20px;
+}
+.margin-bottom {
+  margin-bottom: 15px;
+}
+.title {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.btn-grabar {
+  margin: auto;
+  padding: 5px 35px;
+  background: red;
+  color: yellow;
+  font-size: 28px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  
+}
+
+
+.button{
+  cursor: pointer;
+
+}
+/* MODALES */
+
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 5;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 50%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+  animation-name: modal;
+  animation-duration: 1s;
+}
+
+
+@keyframes modal {
+  from {
+      top: -330px;
+      opacity: 0;
+  }
+  to {
+      top: 0;
+      opacity: 1;
+  }
+}
+
+.close{
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: #7f8c8d;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-header{
+  padding: 8px 16px;
+  background: #55565a;
+  color: #f2f2f2;
+  height: fit-content;
+  
+}
+
+.modal-body {
+  padding: 20px 16px;
+}
+
+.conte-tabla{
+
+display: block;
+
+
+}
+.tabla-radio[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  accent-color:red;
+
+
+}
+
+@media screen and (max-width:900px) {
+  .contenido-modal{
+      width: 70%;
+  }
+}
+
+
+
+

@@ -1,0 +1,53 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1{   
+padding: 15px 10px;
+background-color:rgb(255, 231, 123);
+font-weight: 700;
+font-size: 40px;
+width: 500px;
+border-radius: 15px;
+}
+
+
+.botton-check {
+    background-color: red;
+    border-radius: 15px;
+    min-width: 100px;
+    font-size: 18px;
+    color: yellow;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: solid 2px yellow;
+}
+
+.botton-check:hover {
+    transform: scale(1.1);
+}
+
+
+table{
+    width: 100%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+
+th{
+    background: rgb(127, 240, 170);
+    padding: 20px;
+
+}
+
+td{
+    padding: 20px;
+}
+
+

@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contenedor{
+
+     /* border: 5px solid rgb(212, 54, 54); */
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    justify-content: center; 
+     /* align-items: center;  */
+}
+.contenedor-planes{
+    /* border: 5px solid black; */
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 100%;
+}
+.planes{
+    /* border: 5px solid rgb(131, 112, 18); */
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 300px;
+}
+.planes-clase{
+
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    font-size: 18px;
+}
+.contenedor-planes_titulo{
+    /* border: 5px solid rgb(131, 65, 18); */
+    width:50%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* ----- tabla------ */
+.conte-tabla{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+    /* border: 9px solid yellow; */
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+table thead th,
+table tbody td {
+    border: 1px dashed rgba(1, 6, 6, 0.809);
+    background-color: #FFF;
+  }
+  .encabezado,td{
+    font-size: 20px;
+} 
+.encabezado:nth-child(1){
+width: 115PX;
+background-color: #FFF;
+}
+.encabezado:nth-child(2){
+    width: 150PX;
+    background-color: #FFF;
+    }
+    .encabezado:nth-child(3){
+   
+        background-color: #FFF;
+        }
+        .encabezado:nth-child(4){
+           
+            background-color: #FFF;
+            }
+    .encabezado:nth-child(5){
+        width: 150PX;
+        }
+.encabezado:nth-child(5),
+.encabezado:nth-child(6){
+    background-color: yellow;
+} 
+.encabezado:nth-child(7),
+.encabezado:nth-child(8){
+    background: greenyellow;
+} 
+.encabezado:nth-child(9),
+.encabezado:nth-child(10){
+    background-color: chocolate;
+  
+} 
+.encabezado:nth-child(11),
+.encabezado:nth-child(12){
+    background-color: cornflowerblue;
+} 
+.encabezado:nth-child(11){
+    width: 150PX;
+} 
+.encabezado:nth-child(12){
+    width:20PX;
+} 
+.encabezado:nth-child(13){
+    background-color: rgb(152, 185, 246);
+    color: red;
+}
+.encabezado{
+    position: sticky;
+    top: 0;
+}
+
+.tabla{
+    overflow: scroll;
+    height: 450px;
+    width: 1800px;
+}
+#ta::-webkit-scrollbar{
+    background:rgb(238, 238, 238);
+    height:5px;
+    width:5px;
+    }
+    #ta::-webkit-scrollbar-thumb{
+        background:green;
+       
+        }
+        /* ---Modal---- */
+       
+
+        .flex{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal{
+            display: none;
+            position: fixed;
+            z-index: 5;
+            overflow: auto;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.452);
+        }
+        
+        .contenido-modal{
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            width: 50%;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+            animation-name: modal;
+            animation-duration: 1s;
+        }
+    
+        
+        @keyframes modal {
+            from {
+                top: -330px;
+                opacity: 0;
+            }
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+        
+       
+        .close{
+            color: #f2f2f2;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        
+        .close:hover {
+            color: #7f8c8d;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        
+        .modal-header{
+            padding: 8px 16px;
+            background: #55565a;
+            color: #f2f2f2;
+        }
+        
+        .modal-body {
+            padding: 20px 16px;
+        }
+
+
+        @media screen and (max-width:900px) {
+            .contenido-modal{
+                width: 70%;
+            }
+        }

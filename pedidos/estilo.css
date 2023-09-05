@@ -1,0 +1,1176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    user-select: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ :root {
+    --form-bg-color: #50ade7;
+}
+body{
+    background:#50ade7;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.packform{
+    margin: 10px 0;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.packform>label{
+    margin: 0 5px;
+}
+.submit-btn{
+    margin: auto;
+    width: 100%;
+    padding: 5px 0;
+    background: red;
+    color: yellow;
+    font-size: 20px;
+}
+.packform input,.packform select{
+    max-width: 200px;;
+    font-size: 12px;
+    outline:none;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0.4em 1.6em 0.3em 0.8em;
+    box-sizing: border-box;
+    border: 1px solid rgb(18 255 255);
+    box-shadow: 0 1px 0 1px rgb(0 0 0 / 3%);
+    border-radius: 0.3em;
+    background-color: rgb(255, 255, 255);
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E), linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.borde{
+    border: solid 2px  var(--form-bg-color);
+    border-radius: 15px;
+    background: #ffffff99;
+    padding: 10px 15px;
+    box-shadow: #00000061 7px 7px 8px 2px;
+}
+
+.boton_modal_img{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px  white;
+    background: transparent;
+    align-items: center;
+    box-shadow: #00000061 7px 7px 8px 2px;
+    width: 30%;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conte-table {
+    overflow: scroll;
+    height: 230px;
+    width: 1500px;
+}
+#busqEdquip{
+    backdrop-filter: blur(5px);
+    background-color: rgb(0 0 0 / 29%);
+    height: 100%;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 4;
+    opacity:0;
+    transition:.3s;
+}
+.form-box{
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    height: 365px;
+    width: 320px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: .6s;
+    box-shadow: 0px 0px 20px 4px rgb(69 77 84);
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+thead th,
+tbody td {
+    border: 1px dashed rgba(32, 213, 216, 0.809);
+    background-color: #FFF;
+}
+table tbody td {
+    border: 1px solid rgb(216 32 32);
+    border-bottom: none;
+    border-top: none;
+    background-color: #FFF;
+    text-align: center;
+}
+table thead th{
+    border: 1px solid rgb(216 32 32);
+}
+
+th,
+td {
+    width: 200px;
+    font-size: 20px;
+}
+
+#ta::-webkit-scrollbar {
+    background: rgb(238, 238, 238);
+    height: 5px;
+    width: 5px;
+}
+
+#ta::-webkit-scrollbar-thumb {
+    background: green;
+}
+
+ /* EFECTO DE INPUT */
+
+ .efecto-input{
+    border: 1px solid black;
+    border-radius: 8px;
+    background: rgb(255 255 255 / 39%);
+    /* background: rgb(255 255 255 / 39%); */
+    height: 28px;
+    padding: 0 5px;
+    width: calc(50% - 20px);
+    position:relative;
+    margin: 5px 0;
+ }
+ .conte_operation-form>.efecto-input{
+    width: 100%;
+ }
+ .efecto-input>textarea,
+ .efecto-input>select,
+ .efecto-input>input{
+    border-radius: 5px;
+    background: rgb(255 255 255 / 10%);
+    outline:none;
+    border: none;
+    width: 100%;
+    height: calc(100% - 5px);
+    margin-top: 5px;
+ }
+.span-input{
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    color: #8a8888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.efecto-input>input:focus + .span-input,
+.efecto-input>input:valid + .span-input,
+.efecto-input>textarea:focus + .span-input,
+.efecto-input>textarea:valid + .span-input,
+.efecto-input>select:focus + .span-input,
+.efecto-input>select:valid + .span-input
+ {
+    top: -6px;
+    left: 4px;
+    padding: 1px;
+    font-size: 12px;
+    color: rgb(9, 7, 31);
+    background-color: greenyellow;
+    font-size:10px;
+}
+
+.modal-asesor {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-asesor1 {
+    width: 35%;
+}
+
+.modal-asesor2 {
+    width: 20%;
+}
+
+.modal-asesor3 {
+    width: 42%;
+    display: flex;
+    min-height: 35vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conte-asesor {
+    width: 100%;
+}
+
+.asesor-Ate {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.peso-span {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.asesor-span {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.conte-peso-label {
+    font-size: 35px;
+    font-weight: 800;
+    color: red;
+}
+
+.conte-peso-ASE {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+
+/* fORMULARIO DE PEDIDO */
+
+.conte_pedido {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    border-radius: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* border:solid 5px black; */
+}
+
+
+/* Primer formulario */
+
+.conte-pedido_ficha {
+    width: 68%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    font-size: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.conte-pedido_ficha>.efecto-input{
+    width: 20%;
+}
+
+.Area_afil,
+.Area_Des,
+.Area_Acti,
+.Area_vali {
+    margin-left: 5px;
+    resize: none;
+}
+.ficha-titulo {
+    color: red;
+    position: absolute;
+    margin-top: -20px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.empresa {
+    height: 25px;
+    width: 85%;
+    margin-top: 15px;
+}
+
+/* Segundo formulario */
+
+.conte-pedido_check {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+}
+
+.botton-check {
+    background-color: red;
+    border-radius: 15px;
+    width: 100px;
+    font-size: 18px;
+    color: yellow;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: solid 2px yellow;
+}
+
+.botton-check:hover {
+    transform: scale(1.1);
+}
+
+.whas {
+    background-image: url("assets/bxl-whatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.whas:hover {
+    transform: scale(1.1);
+}
+
+.llamar,
+.llamada,
+.button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.llamada:hover,
+.button:hover,
+.llamar:hover,
+.izipay:hover,
+.Guardar_tipf:hover,
+.venta_tipf:hover {
+    transform: scale(1.1);
+}
+
+.llamar {
+    background: blue;
+    color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.izipay {
+    background-color: red;
+    color: yellow;
+    border: 1px solid yellow;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.contenedor-llaizi {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* FORMULARIO DE OPERACIONES */
+
+.conte_operation {
+    padding: 15px 5px;
+    width: 100%;
+    /* display: flex; */
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.conte_operation-form {
+    width: 15%;
+    height: 250px;
+    font-size: 14px;
+}
+
+
+/* --------------Efecto del modal */
+
+.flex,
+.flexAfili,
+.flexVali,
+.flexActi,
+.flexDes,
+.flexHfc {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexLLa {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal,
+.modalAfili,
+.modalVali,
+.modalActi,
+.modalDes,
+.modalHfc ,
+.modalLLa{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal,
+.contenido-modalLLa,
+.contenido-modalAfili,
+.contenido-modalVali,
+.contenido-modalActi,
+.contenido-modalDes,
+.contenido-modalHfc {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    width: 30%;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+    animation-name: modal;
+    animation-duration: 1s;
+    border-radius: 15px;
+}
+
+.contenido-modalLLa {
+    overflow:hidden;
+    width: 0;
+    height: 0;
+    transition: 1.5s;
+    translate: 0 -80%;
+}
+
+@keyframes modal {
+    from {
+        top: -330px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.close,
+.closeAfili,
+.closeVali,
+.closeActi,
+.closeDes,
+.closeHfc,
+.closeLLa {
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.close:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeAfili:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeVali:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeActi:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeDes:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeHfc:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.closeLLa:hover {
+    color: #7f8c8d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header,
+.modal-headerAfili,
+.modal-headerVali,
+.modal-headerActi,
+.modal-headerDes,
+.modal-headerHfc,
+.modal-headerLLa {
+    padding: 8px 16px;
+    background: #50ade7;
+    color: #000000;
+    height: fit-content;
+}
+
+.modal-body,
+.modal-bodyAfili,
+.modal-bodyVali,
+.modal-bodyActi,
+.modal-bodyDes,
+.modal-bodyHfc,
+.modal-bodyLLa {
+    padding: 20px 16px;
+}
+
+/* .modal-bodyLLa {
+  /* border: 5p xx solid rgb(226, 8, 219); */
+
+
+/* } */
+
+.lla-conte {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+    /* border: 1px solid black; */
+}
+
+.lla-conte>input,
+.lla-conte>select {
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+.lla-conte>label {
+    width: 250px;
+    /* border: 1px solid black; */
+}
+
+.lla-input {
+    width: 40%;
+    font-size: 15px;
+}
+
+.lla-input-dni,
+.lla-input-ref {
+    font-size: 15px;
+    width: 20%;
+}
+
+.Ingresa-modal {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-right: 15px;
+}
+
+.button {
+    background-color: red;
+    color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    margin-top: 15px;
+    width: 40%;
+    height: 40px;
+    font-size: 18px;
+}
+
+.Guardar_tipf {
+    background-color: rgb(0, 240, 24);
+    color: rgb(2, 2, 2);
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 95%;
+    height: 40px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+/* -------------------------------- */
+
+.operation-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.operation-form_cor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form_cor {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_cor-x {
+    margin-bottom: 5px;
+}
+
+
+/* FORMULARIO DE PLANES 1 */
+
+
+/* Formulario de informaciÃ³n */
+
+.conte_Plan_padre {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.conte_plan-form {
+    height: max-content;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px 10px;
+}
+
+.form-fecha_coor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(50% - 20px);
+    justify-content: space-between;
+}
+
+
+.plan_form-info {
+    height: calc(50% - 10px);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+/* fORMULARIO DEL PRIMER PLAN */
+
+.conte_plan {
+    min-height: 460px;
+    height: max-content;
+    width: 45%;
+    position: relative;
+    margin: 20px 10px;
+    padding-top: 15px;
+}
+
+.tapar {
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background: #5c5c5cbd;
+    translate: -15px -14px;
+    border-radius: 14px;
+}
+.bordeTipoPlanes{
+    display: flex;
+    width: calc(50% - 20px);
+    justify-content: space-between;
+}
+.bordeTipoPlanes>div {
+    border: 1px solid black;
+    padding:5px 15px;
+    border-radius: 15px;
+    width: calc(50% - 5px);
+    text-align: center;
+}
+
+.Titulo-plan {
+    color: white;
+    position: absolute;
+    top: -15px;
+    background: blue;
+    left: -5px;
+    padding: 5px 10px;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+}
+.Titulo-plan>input{
+    display:none;
+}
+.Peso-venta{
+    background: yellow;
+    color: red;
+    position: absolute;
+    padding: 5px 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    top: -15px;
+    right: 0;
+    cursor: alias;
+    z-index: 2;
+}
+
+
+/* Contenedor cargo fijo cuota linea */
+
+.conte_plan-planes {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* Contenedor de operador Renta Adelantada */
+
+.conte_plan-planes2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.operador,
+.renta_adelantada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: calc(50% - 20px);
+}
+.operador>input{
+    width:30px;
+    height: 30px;
+    padding:5px;
+    border-radius:5px;
+    background: blue;
+    color:white;
+    border:1px solid white
+}
+.operador>input:hover{
+    box-shadow: gray 5px 3px 5px;
+    background: white;
+    color:blue;
+    border:1px solid blue;
+}
+
+.operador-input,
+.renta-input {
+    width: 80px;
+}
+
+
+/* formulario de IMEI Y ISSEC */
+
+.producto {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.imei {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--form-bg-color);
+    border-radius: 15px;
+    background: #ffffff99;
+    box-shadow: #00000061 7px 7px 8px 2px;
+    padding: 10px;
+    margin: 10px 0;
+    position:relative;
+}
+.imei>span {
+    position:absolute;
+    top:-10px;
+    border-radius: 7px;
+    left: calc(50% - 42px);
+    right:calc(50% - 42px);
+    background-color: #50ade7;
+    padding: 2px 10px;
+    text-align: center;
+}
+
+.conte-imei {
+    margin-top: -15px;
+    margin-bottom: 8px;
+}
+
+.Inicial_Sissac {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 9px;
+}
+
+
+.Area_imei,
+.Area_icc {
+    width: 85%;
+    height: 50%;
+    resize: none;
+}
+
+.Plane-2-3 {
+    width: 100%;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.conte-check {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.conte-check>div {
+    display: none;
+    /* display: flex; */
+    flex-direction: row;
+}
+
+
+.check[type='checkbox'] {
+    accent-color: red;
+}
+
+/* --------Formulario de Pedido Libre---- */
+
+.conte_Pedilibre {
+    width: calc((45% + 40px) * 2);
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+
+.pedilibre {
+    width: 100%;
+    height: 270px;
+    position: relative;
+    padding: 15px;
+}
+
+.titulo_pedidolibre {
+    position: absolute;
+    background-color: white;
+    padding: 1px;
+    top: -80px;
+    left: 0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+/* .pedilibre-none{
+
+        border: 8px solid rgb(79, 29, 205);
+        width: 20%;
+        height: 250px;
+    } */
+
+.pedilibre-1,
+.pedido-operado,
+.pedilibre-3,
+.conte-pedidoFecha {
+    display: flex;
+    justify-content: space-around;
+    width: 79%;
+    flex-direction: row;
+    /* border: 1px solid black;   */
+    height: 57px;
+    align-items: center;
+}
+
+.pedilibre-inicial,
+.pedilibre-renta,
+.pedilibre-cargo,
+.conte-operador,
+.conte-numeroportar,
+.conte-migraci {
+    display: flex;
+    flex-direction: column;
+}
+
+.operador-select {
+    width: 85%;
+}
+
+.pedio-lugar-input {
+    width: 50%;
+}
+
+.conte-migraci-select {
+    width: 95%;
+}
+
+.pedilibre-3-input {
+    width: 100%;
+}
+
+.input-pdilibre-1 {
+    width: 50%;
+    height: 20px;
+}
+
+.conte-pedidoFecha {
+    /* background-color: rgb(210, 206, 206); */
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+}
+
+.conte-nac {
+    margin-bottom: 5px;
+}
+
+.pedilibre-4 {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+    height: 60px;
+}
+
+.conte-nombres {
+    /* background-color: rgb(174, 34, 34); */
+    width: 100%;
+}
+
+.nombre-padre,
+.nombre-madre {
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre-padre-input,
+.nombre-madre-input {
+    width: 85%;
+    height: 15px;
+}
+
+
+/* color de los selectores*/
+
+.tipificacion {
+    width: 40%;
+    font-size: 17px;
+}
+
+.subtipificacion {
+    width: 40%;
+    font-size: 17px;
+}
+
+
+/* ----- botones de verificacion */
+
+.verificacion {
+    color: black;
+    background-color: yellow;
+    width: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+
+/* Respondive desing */
+
+@media (max-width: 1242px) {
+    .conte-pedido_ficha,
+    .conte-pedido_check {
+        width: 89%;
+        margin-top: 15px;
+        align-items: center;
+    }
+    .conte-pedido_ficha>.efecto-input{
+        width: calc(50% - 20px);
+    }
+    .conte-pedido_check {
+        height: 100px;
+    }
+    .conte_operation-form {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1119px) {
+    .conte_Plan_padre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conte_Pedilibre,
+    .conte_plan-form,
+    .conte_plan {
+        width: 89%;
+        height: calc(25% + 50px);
+    }
+}
+@media (max-width: 903px) {
+    .dire_info-moto {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 805px) {
+    .conte-pedido_ficha {
+        height: 150px;
+    }
+}
+
+@media (max-width:705px) {
+    .form-fecha_coor {
+        width: 100%;;
+    }
+    .conte_plan-form {
+        height: max-content;
+    }
+    .plan_form-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .efecto-input{
+        width: 100%;
+    }
+    .operador,
+    .renta_adelantada {
+        width: 100%;
+    }
+    .bordeTipoPlanes{
+        width: 100%;
+    }
+    .ficha-titulo{
+        font-size: 16px;
+    }
+    .producto{
+        height: max-content;
+        flex-direction: column;
+    }
+    .imei{
+        width: 100%;
+    }
+
+}
+/* RESPONSIVE PARA CELULARES */
+
+@media (max-width:457px) {
+    .distrito {
+        width: 140px;
+    }
+    .Plane-2-3 {
+        margin-top: 870px;
+    }
+}
+
+@media (max-width:449px) {
+    .Area_afil,
+    .Area_vali {
+        height: 35%;
+    }
+    .Area_Acti {
+        height: 25%;
+    }
+    .Area_Des {
+        height: 5%;
+    }
+}
+
+@media (max-width:435px) {
+    .conte-pedido_ficha {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:362px) {
+    .ficha-titulo {
+        position: absolute;
+        margin-top: -189px;
+        padding: 1px;
+    }
+}
+
+
+/* ----------Modal--- */
+
+@media screen and (max-width:900px) {
+    .contenido-modal,
+    .contenido-modalActi,
+    .contenido-modalAfili,
+    .contenido-modalDes,
+    .contenido-modalHfc,
+    .contenido-modalVali,
+    .contenido-modalLLa {
+        width: 70%;
+    }
+}
